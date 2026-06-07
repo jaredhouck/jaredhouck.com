@@ -176,9 +176,9 @@ h2 {
     gap: 18px;
 }
 
-.grid-four {
+.grid-two {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 18px;
 }
 
@@ -268,15 +268,10 @@ footer {
     font-size: 0.9rem;
 }
 
-@media (max-width: 1000px) {
-    .grid-four {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
 @media (max-width: 900px) {
     .hero-grid,
-    .two-column {
+    .two-column,
+    .grid-two {
         grid-template-columns: 1fr;
     }
 
@@ -290,8 +285,7 @@ footer {
 }
 
 @media (max-width: 600px) {
-    .grid,
-    .grid-four {
+    .grid {
         grid-template-columns: 1fr;
     }
 
@@ -359,8 +353,8 @@ footer {
             <a href="#about">About</a>
             <a href="#featured">Featured</a>
             <a href="#impact">Impact</a>
+            <a href="#speaking">Speaking</a>
             <a href="#thinking">Thinking</a>
-            <a href="#philosophy">Philosophy</a>
             <a href="#contact">Contact</a>
         </div>
     </div>
@@ -369,7 +363,7 @@ footer {
 <header class="hero">
     <div class="container hero-grid">
         <div>
-            <h1>Helping healthcare organizations solve the right problems before implementing technology.</h1>
+            <h1>Helping healthcare organizations improve care by solving the right problems before implementing technology.</h1>
 
             <p class="subtitle">
                 Jared Houck, MHIIM, RN, NEA-BC, NI-BC<br>
@@ -377,7 +371,7 @@ footer {
             </p>
 
             <p>
-                I am a clinical informatics executive focused on improving patient care, clinician experience,
+                I am a clinical informatics executive focused on patient care, clinician experience,
                 and operational performance through technology, governance, workflow redesign, and clinical leadership.
             </p>
 
@@ -394,6 +388,8 @@ footer {
             <img src="assets/Houck_2023_Headshot.jpg" alt="Jared Houck" class="profile-photo">
             <p><strong>Based in Charleston, South Carolina</strong></p>
             <p>Chief Nursing Informatics Officer</p>
+            <p>Becker's Healthcare contributor</p>
+            <p>Speaker and healthcare technology advisor</p>
             <p>Board Certified Nurse Executive Advanced</p>
             <p>Board Certified Informatics Nurse</p>
             <p>Doctor of Nursing Practice candidate, expected December 2026</p>
@@ -422,12 +418,6 @@ footer {
                 <p>
                     I bring a system-level perspective to initiatives spanning Epic optimization, clinical decision
                     support redesign, mobile technology adoption, regulatory alignment, governance, and AI innovation.
-                </p>
-
-                <p>
-                    I am known as a trusted bridge between clinical teams and technology, advocating for both patients
-                    and clinicians throughout the IT lifecycle so informatics solutions are safe, scalable, usable,
-                    and strategically aligned.
                 </p>
             </div>
 
@@ -506,7 +496,7 @@ footer {
             Examples of clinical informatics work that shape my perspective on technology, governance, adoption, and measurable value.
         </p>
 
-        <div class="grid">
+        <div class="grid-two">
             <div class="card">
                 <h3>Reduced alert fatigue</h3>
                 <p>
@@ -515,7 +505,7 @@ footer {
             </div>
 
             <div class="card">
-                <h3>Technology optimization</h3>
+                <h3>Improved technology value</h3>
                 <p>
                     Supported Epic optimization initiatives that replaced third-party applications with Epic-native solutions,
                     resulting in more than $1.4 million in projected savings.
@@ -523,7 +513,7 @@ footer {
             </div>
 
             <div class="card">
-                <h3>Mobile nursing transformation</h3>
+                <h3>Transformed mobile nursing workflows</h3>
                 <p>
                     Supported deployment of more than 500 clinical smartphones to improve mobility, communication,
                     documentation timeliness, and clinician workflow.
@@ -531,55 +521,40 @@ footer {
             </div>
 
             <div class="card">
-                <h3>Provider adoption</h3>
-                <p>
-                    Built and led a provider support program that helped more than 100 physicians and advanced practice
-                    providers move from low to high EHR adoption in less than six months.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>Shared governance</h3>
+                <h3>Built governance for change</h3>
                 <p>
                     Established and led nursing informatics governance structures that brought frontline clinical voices
                     into technology decisions.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>AI governance</h3>
-                <p>
-                    Helped establish evaluation processes focused on safety, privacy, workflow integration, accountability,
-                    and measurable value for clinical AI solutions.
                 </p>
             </div>
         </div>
     </div>
 </section>
 
-<section id="credentials">
+<section id="speaking">
     <div class="container">
-        <h2>Education and credentials</h2>
+        <h2>Speaking and industry contributions</h2>
+
+        <p class="section-intro">
+            I contribute to regional and industry conversations on clinical informatics, health information management,
+            AI governance, workflow redesign, and healthcare technology adoption.
+        </p>
 
         <div class="two-column">
-            <div>
-                <h3>Education</h3>
+            <div class="card">
+                <h3>Recent speaking engagements</h3>
                 <ul>
-                    <li>Doctor of Nursing Practice, Executive Leadership, Augusta University, expected December 2026</li>
-                    <li>Master of Health Informatics and Information Management, The University of Tennessee Health Science Center</li>
-                    <li>Bachelor of Science in Nursing, Baptist Health Sciences University</li>
-                    <li>Bachelor of Arts in Sociology, University of Memphis</li>
+                    <li>South Carolina HIMSS</li>
+                    <li>South Carolina AHIMA</li>
                 </ul>
             </div>
 
-            <div>
-                <h3>Certifications</h3>
+            <div class="card">
+                <h3>Industry contributions</h3>
                 <ul>
-                    <li>NEA-BC, Board Certified Nurse Executive Advanced</li>
-                    <li>NI-BC, Board Certified Informatics Nurse</li>
-                    <li>Epic Clinical Informaticist</li>
-                    <li>Epic Cogito</li>
-                    <li>Lean Six Sigma Green Belt</li>
+                    <li>Becker's Healthcare contributor and quoted CNIO voice</li>
+                    <li>Healthcare technology advisor and product feedback partner</li>
+                    <li>Regular commentary on clinical informatics, AI governance, workflow redesign, and clinician experience</li>
                 </ul>
             </div>
         </div>
@@ -588,12 +563,10 @@ footer {
 
 <section id="thinking">
     <div class="container">
-        <h2>Writing and current thinking</h2>
+        <h2>Current thinking</h2>
 
         <p class="section-intro">
-            I publish most of my writing and professional commentary on LinkedIn, where I discuss clinical informatics,
-            healthcare transformation, AI governance, workflow redesign, documentation burden, nursing leadership,
-            and clinician experience.
+            These are themes that consistently appear in my work, speaking engagements, advisory conversations, and writing.
         </p>
 
         <div class="grid">
@@ -631,67 +604,6 @@ footer {
                 </a>
             </div>
 
-            <div class="card thinking-card">
-                <h3>Nursing care plans and the future of documentation</h3>
-                <p>
-                    Nursing documentation needs to evolve from static care plans and compliance artifacts toward tools
-                    that better support real clinical work.
-                </p>
-                <a href="https://www.linkedin.com/posts/jaredhouck_nursing-care-plans-have-a-long-history-of-activity-7366806482589339648-5m97" target="_blank" rel="noopener">
-                    Read on LinkedIn
-                </a>
-            </div>
-
-            <div class="card thinking-card">
-                <h3>Why is care still so hard to coordinate?</h3>
-                <p>
-                    A reflection on the gap between healthcare technology investment and the persistent friction clinicians
-                    and patients still experience in everyday care coordination.
-                </p>
-                <a href="https://www.linkedin.com/posts/jaredhouck_after-decades-of-investment-in-clinical-technology-activity-7456333815570014209-UhaD" target="_blank" rel="noopener">
-                    Read on LinkedIn
-                </a>
-            </div>
-
-            <div class="card thinking-card">
-                <h3>Who gets the recognition in healthcare transformation?</h3>
-                <p>
-                    Sustainable transformation depends on governance, frontline engagement, implementation discipline,
-                    and the people doing the operational work behind change.
-                </p>
-                <a href="https://www.linkedin.com/posts/jaredhouck_healthcaretransformation-healthcareit-clinicalinformatics-activity-7354910760952578048-KZtY" target="_blank" rel="noopener">
-                    Read on LinkedIn
-                </a>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<section id="focus">
-    <div class="container">
-        <h2>Current focus areas</h2>
-
-        <div class="grid-four">
-            <div class="card">
-                <h3>Clinical AI governance</h3>
-                <p>Evaluation models for safe, accountable, workflow-aware AI adoption.</p>
-            </div>
-
-            <div class="card">
-                <h3>Workflow redesign</h3>
-                <p>Technology work that starts with the clinical and operational problem.</p>
-            </div>
-
-            <div class="card">
-                <h3>Documentation burden</h3>
-                <p>Reducing low-value documentation and questioning documentation as a proxy.</p>
-            </div>
-
-            <div class="card">
-                <h3>Human-centered adoption</h3>
-                <p>Designing technology implementation around clinicians, patients, and real work.</p>
-            </div>
         </div>
     </div>
 </section>
@@ -708,45 +620,15 @@ footer {
     </div>
 </section>
 
-<section id="advisory">
-    <div class="container">
-        <h2>Speaking and advisory conversations</h2>
-
-        <p class="section-intro">
-            I am interested in conversations with healthcare leaders, founders, investors, and product teams building
-            technology that improves clinician experience, patient care, and healthcare operations.
-        </p>
-
-        <div class="two-column">
-            <div>
-                <h3>Useful conversation areas</h3>
-                <ul>
-                    <li>Clinical workflow fit</li>
-                    <li>Nursing informatics strategy</li>
-                    <li>AI governance and evaluation</li>
-                    <li>EHR optimization</li>
-                    <li>Product usability in real healthcare settings</li>
-                    <li>Clinician adoption and change management</li>
-                </ul>
-            </div>
-
-            <div class="callout">
-                <strong>Note</strong>
-                <p>
-                    Advisory availability is limited and subject to appropriate conflict-of-interest review.
-                </p>
-            </div>
-        </div>
-    </div>
-</section>
-
 <section id="contact">
     <div class="container">
         <div class="contact-box">
             <h2>Connect</h2>
 
             <p>
-                I share writing and professional updates on LinkedIn.
+                I share writing and professional updates on LinkedIn. I am also open to select speaking and advisory
+                conversations with healthcare leaders, founders, and product teams working to improve clinician experience,
+                patient care, and healthcare operations.
             </p>
 
             <p>
