@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Jared Houck, MHIIM, RN, NEA-BC, NI-BC</title>
+<title>Jared Houck, MHIIM, RN, NEA-BC, NI-BC | Chief Nursing Informatics Officer</title>
 
-<meta name="description" content="Jared Houck is a Chief Nursing Informatics Officer and clinical informatics executive focused on healthcare technology, AI governance, workflow redesign, clinician experience, and patient care.">
+<meta name="description" content="Jared Houck is a Chief Nursing Informatics Officer and clinical informatics executive focused on healthcare technology, workflow redesign, AI governance, clinician experience, and operational performance.">
 
 <style>
 :root {
@@ -58,7 +58,7 @@ nav {
 }
 
 .nav-links a {
-    margin-left: 24px;
+    margin-left: 22px;
     color: var(--muted);
     text-decoration: none;
     font-size: 0.95rem;
@@ -149,11 +149,17 @@ h2 {
 .section-intro {
     font-size: 1.1rem;
     color: var(--muted);
-    max-width: 760px;
+    max-width: 780px;
     margin-bottom: 36px;
 }
 
 .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.grid-four {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 18px;
@@ -190,6 +196,10 @@ h2 {
     border-radius: 12px;
 }
 
+.callout p {
+    margin-bottom: 0;
+}
+
 ul {
     padding-left: 20px;
 }
@@ -200,6 +210,28 @@ li {
 
 a {
     color: var(--accent);
+}
+
+.thinking-card a {
+    display: inline-block;
+    margin-top: 14px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.thinking-card a:hover {
+    text-decoration: underline;
+}
+
+.philosophy {
+    background: #f8fafc;
+}
+
+.philosophy-quote {
+    font-size: 1.35rem;
+    line-height: 1.55;
+    max-width: 900px;
+    margin: 0;
 }
 
 .contact-box {
@@ -219,6 +251,12 @@ footer {
     font-size: 0.9rem;
 }
 
+@media (max-width: 1000px) {
+    .grid-four {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
 @media (max-width: 900px) {
     .hero-grid,
     .two-column {
@@ -235,7 +273,8 @@ footer {
 }
 
 @media (max-width: 600px) {
-    .grid {
+    .grid,
+    .grid-four {
         grid-template-columns: 1fr;
     }
 
@@ -253,9 +292,9 @@ footer {
         <div class="logo">Jared Houck</div>
         <div class="nav-links">
             <a href="#about">About</a>
-            <a href="#outcomes">Outcomes</a>
-            <a href="#ideas">Ideas</a>
-            <a href="#advisory">Advisory</a>
+            <a href="#impact">Impact</a>
+            <a href="#thinking">Thinking</a>
+            <a href="#philosophy">Philosophy</a>
             <a href="#contact">Contact</a>
         </div>
     </div>
@@ -264,23 +303,24 @@ footer {
 <header class="hero">
     <div class="container hero-grid">
         <div>
-            <h1>Technology should make healthcare work better for clinicians and patients.</h1>
+            <h1>Helping healthcare organizations solve the right problems before implementing technology.</h1>
 
             <p class="subtitle">
-                Jared Houck, MHIIM, RN, NEA-BC, NI-BC
+                Jared Houck, MHIIM, RN, NEA-BC, NI-BC<br>
+                Chief Nursing Informatics Officer
             </p>
 
             <p>
-                I am a Chief Nursing Informatics Officer and clinical informatics executive working at the intersection
-                of nursing practice, clinical operations, electronic health records, artificial intelligence, and healthcare strategy.
+                I am a clinical informatics executive focused on improving patient care, clinician experience,
+                and operational performance through technology, governance, workflow redesign, and clinical leadership.
             </p>
 
             <div class="badges">
                 <span class="badge">Clinical Informatics</span>
-                <span class="badge">AI Governance</span>
-                <span class="badge">Workflow Redesign</span>
                 <span class="badge">Nursing Leadership</span>
-                <span class="badge">Digital Health</span>
+                <span class="badge">Workflow Redesign</span>
+                <span class="badge">EHR Optimization</span>
+                <span class="badge">AI Governance</span>
             </div>
         </div>
 
@@ -288,8 +328,9 @@ footer {
             <img src="assets/Houck_2023_Headshot.jpg" alt="Jared Houck" class="profile-photo">
             <p><strong>Based in Charleston, South Carolina</strong></p>
             <p>Chief Nursing Informatics Officer</p>
-            <p>Clinical Informatics Executive</p>
-            <p>Healthcare Technology Advisor</p>
+            <p>Board Certified Nurse Executive Advanced</p>
+            <p>Board Certified Informatics Nurse</p>
+            <p>Doctor of Nursing Practice candidate, expected December 2026</p>
         </div>
     </div>
 </header>
@@ -301,38 +342,45 @@ footer {
         <h2>About</h2>
 
         <p class="section-intro">
-            I am a registered nurse and clinical informatics leader with nearly two decades of experience helping
-            healthcare organizations improve care delivery through technology, workflow redesign, governance, and operational leadership.
+            I am a dual board-certified nurse executive and clinical informatics leader with more than 20 years of
+            experience advancing health system strategy, digital transformation, and EHR optimization.
         </p>
 
         <div class="two-column">
             <div>
                 <p>
-                    My work sits between frontline clinical practice and enterprise technology strategy. I help translate
-                    operational problems into informatics solutions that are usable, sustainable, and grounded in the real work of healthcare.
+                    My work focuses on improving patient care, reducing clinician burden, and delivering measurable
+                    operational and financial results through thoughtful use of healthcare technology.
                 </p>
 
                 <p>
-                    I am currently completing a Doctor of Nursing Practice degree with an expected graduation date of December 2026.
+                    I bring a system-level perspective to initiatives spanning Epic optimization, clinical decision
+                    support redesign, mobile technology adoption, regulatory alignment, governance, and AI innovation.
+                </p>
+
+                <p>
+                    I am known as a trusted bridge between clinical teams and technology, advocating for both patients
+                    and clinicians throughout the IT lifecycle so informatics solutions are safe, scalable, usable,
+                    and strategically aligned.
                 </p>
             </div>
 
             <div class="callout">
-                <strong>Core belief</strong>
+                <strong>Core positioning</strong>
                 <p>
-                    The best healthcare technology work starts by defining the clinical problem before selecting the tool.
+                    Nurse. Informatics leader. Executive. Digital transformation partner.
                 </p>
             </div>
         </div>
     </div>
 </section>
 
-<section id="outcomes">
+<section id="impact">
     <div class="container">
-        <h2>Selected outcomes</h2>
+        <h2>Selected impact</h2>
 
         <p class="section-intro">
-            Examples of clinical informatics work that shapes my perspective.
+            Examples of clinical informatics work that shape my perspective on technology, governance, adoption, and measurable value.
         </p>
 
         <div class="grid">
@@ -344,67 +392,196 @@ footer {
             </div>
 
             <div class="card">
-                <h3>Improved mobile workflows</h3>
+                <h3>Technology optimization</h3>
                 <p>
-                    Supported deployment of more than 500 clinical smartphones to improve mobility, communication, and documentation timeliness.
+                    Supported Epic optimization initiatives that replaced third-party applications with Epic-native solutions,
+                    resulting in more than $1.4 million in projected savings.
                 </p>
             </div>
 
             <div class="card">
-                <h3>AI governance leadership</h3>
+                <h3>Mobile nursing transformation</h3>
                 <p>
-                    Helped establish evaluation processes focused on safety, privacy, workflow integration, accountability, and measurable value.
+                    Supported deployment of more than 500 clinical smartphones to improve mobility, communication,
+                    documentation timeliness, and clinician workflow.
                 </p>
             </div>
 
             <div class="card">
-                <h3>Operational improvement</h3>
+                <h3>Provider adoption</h3>
                 <p>
-                    Led informatics initiatives that reduced clinician burden and improved workflow efficiency across multiple care settings.
+                    Built and led a provider support program that helped more than 100 physicians and advanced practice
+                    providers move from low to high EHR adoption in less than six months.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Shared governance</h3>
+                <p>
+                    Established and led nursing informatics governance structures that brought frontline clinical voices
+                    into technology decisions.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>AI governance</h3>
+                <p>
+                    Helped establish evaluation processes focused on safety, privacy, workflow integration, accountability,
+                    and measurable value for clinical AI solutions.
                 </p>
             </div>
         </div>
     </div>
 </section>
 
-<section id="ideas">
+<section id="credentials">
     <div class="container">
-        <h2>Ideas I am working on</h2>
-
-        <p class="section-intro">
-            My current thinking centers on how healthcare can avoid using new technology to preserve broken workflows.
-        </p>
+        <h2>Education and credentials</h2>
 
         <div class="two-column">
-            <div class="card">
-                <h3>AI and nursing documentation</h3>
-                <p>
-                    Before healthcare uses AI to help nurses document faster, we should ask whether the documentation is useful,
-                    necessary, and connected to patient care.
-                </p>
+            <div>
+                <h3>Education</h3>
+                <ul>
+                    <li>Doctor of Nursing Practice, Executive Leadership, Augusta University, expected December 2026</li>
+                    <li>Master of Health Informatics and Information Management, The University of Tennessee Health Science Center</li>
+                    <li>Bachelor of Science in Nursing, Baptist Health Sciences University</li>
+                    <li>Bachelor of Arts in Sociology, University of Memphis</li>
+                </ul>
             </div>
 
-            <div class="card">
-                <h3>Documentation as a proxy</h3>
-                <p>
-                    Healthcare often uses documentation because it is visible, not because it is the best measure of clinical practice or quality.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>Problem-first informatics</h3>
-                <p>
-                    The most important step in technology work is defining the actual problem before selecting a solution.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>Smart rooms and clinical AI</h3>
-                <p>
-                    Multi-sensor room technologies may become an important AI use case for nursing, patient safety, and virtual care models.
-                </p>
+            <div>
+                <h3>Certifications</h3>
+                <ul>
+                    <li>NEA-BC, Board Certified Nurse Executive Advanced</li>
+                    <li>NI-BC, Board Certified Informatics Nurse</li>
+                    <li>Epic Clinical Informaticist</li>
+                    <li>Epic Cogito</li>
+                    <li>Lean Six Sigma Green Belt</li>
+                </ul>
             </div>
         </div>
+    </div>
+</section>
+
+<section id="thinking">
+    <div class="container">
+        <h2>Writing and current thinking</h2>
+
+        <p class="section-intro">
+            I publish most of my writing and professional commentary on LinkedIn, where I discuss clinical informatics,
+            healthcare transformation, AI governance, workflow redesign, documentation burden, nursing leadership,
+            and clinician experience.
+        </p>
+
+        <div class="grid">
+
+            <div class="card thinking-card">
+                <h3>Define the problem before solving it</h3>
+                <p>
+                    Clinical informatics creates a necessary pause between urgency and action so teams can define,
+                    measure, analyze, and solve the right problem.
+                </p>
+                <a href="https://www.linkedin.com/posts/jaredhouck_clinicians-are-trained-to-respond-quickly-activity-7466464832351932416-Y1d4" target="_blank" rel="noopener">
+                    Read on LinkedIn
+                </a>
+            </div>
+
+            <div class="card thinking-card">
+                <h3>Nurses need upstream influence in technology design</h3>
+                <p>
+                    Nurses need to be involved before products are designed, business cases are built, and purchasing
+                    decisions are made.
+                </p>
+                <a href="https://www.linkedin.com/posts/jaredhouck_its-remarkable-to-me-that-in-2026-i-consistently-activity-7460446514700603392-fh4c" target="_blank" rel="noopener">
+                    Read on LinkedIn
+                </a>
+            </div>
+
+            <div class="card thinking-card">
+                <h3>AI cannot fix broken workflows</h3>
+                <p>
+                    AI will not succeed if it is layered onto broken workflows, disconnected communication, unnecessary
+                    documentation, and fragmented patient experiences.
+                </p>
+                <a href="https://www.linkedin.com/posts/jaredhouck_you-cant-put-ai-on-top-of-a-fax-machine-activity-7363620788572147714-QZsb" target="_blank" rel="noopener">
+                    Read on LinkedIn
+                </a>
+            </div>
+
+            <div class="card thinking-card">
+                <h3>Nursing care plans and the future of documentation</h3>
+                <p>
+                    Nursing documentation needs to evolve from static care plans and compliance artifacts toward tools
+                    that better support real clinical work.
+                </p>
+                <a href="https://www.linkedin.com/posts/jaredhouck_nursing-care-plans-have-a-long-history-of-activity-7366806482589339648-5m97" target="_blank" rel="noopener">
+                    Read on LinkedIn
+                </a>
+            </div>
+
+            <div class="card thinking-card">
+                <h3>Why is care still so hard to coordinate?</h3>
+                <p>
+                    A reflection on the gap between healthcare technology investment and the persistent friction clinicians
+                    and patients still experience in everyday care coordination.
+                </p>
+                <a href="https://www.linkedin.com/posts/jaredhouck_after-decades-of-investment-in-clinical-technology-activity-7456333815570014209-UhaD" target="_blank" rel="noopener">
+                    Read on LinkedIn
+                </a>
+            </div>
+
+            <div class="card thinking-card">
+                <h3>Who gets the recognition in healthcare transformation?</h3>
+                <p>
+                    Sustainable transformation depends on governance, frontline engagement, implementation discipline,
+                    and the people doing the operational work behind change.
+                </p>
+                <a href="https://www.linkedin.com/posts/jaredhouck_healthcaretransformation-healthcareit-clinicalinformatics-activity-7354910760952578048-KZtY" target="_blank" rel="noopener">
+                    Read on LinkedIn
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="focus">
+    <div class="container">
+        <h2>Current focus areas</h2>
+
+        <div class="grid-four">
+            <div class="card">
+                <h3>Clinical AI governance</h3>
+                <p>Evaluation models for safe, accountable, workflow-aware AI adoption.</p>
+            </div>
+
+            <div class="card">
+                <h3>Workflow redesign</h3>
+                <p>Technology work that starts with the clinical and operational problem.</p>
+            </div>
+
+            <div class="card">
+                <h3>Documentation burden</h3>
+                <p>Reducing low-value documentation and questioning documentation as a proxy.</p>
+            </div>
+
+            <div class="card">
+                <h3>Human-centered adoption</h3>
+                <p>Designing technology implementation around clinicians, patients, and real work.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="philosophy" class="philosophy">
+    <div class="container">
+        <h2>Professional philosophy</h2>
+
+        <p class="philosophy-quote">
+            Technology should support clinical work, not create more of it. The most successful healthcare technology
+            initiatives begin by understanding the clinical problem, engaging frontline users, and measuring outcomes
+            that matter to patients, clinicians, and organizations.
+        </p>
     </div>
 </section>
 
@@ -413,8 +590,8 @@ footer {
         <h2>Speaking and advisory conversations</h2>
 
         <p class="section-intro">
-            I am interested in conversations with healthcare leaders, founders, investors, and product teams building technology
-            that improves clinician experience, patient care, and healthcare operations.
+            I am interested in conversations with healthcare leaders, founders, investors, and product teams building
+            technology that improves clinician experience, patient care, and healthcare operations.
         </p>
 
         <div class="two-column">
