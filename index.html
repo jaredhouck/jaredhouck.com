@@ -8,7 +8,7 @@
 
   <meta
     name="description"
-    content="Jared Houck is a Charleston-based clinical informatics executive, registered nurse, and dual board-certified nurse leader focused on EHR optimization, nursing workflow, AI governance, and clinician experience."
+    content="Jared Houck is a clinical informatics executive, registered nurse, and dual board-certified nurse leader focused on EHR optimization, nursing workflow, AI governance, and clinician experience."
   />
 
   <meta name="author" content="Jared Houck" />
@@ -34,17 +34,16 @@
 
   <style>
     :root {
-      --bg: #f6f8fb;
+      --bg: #f7f9fb;
       --surface: #ffffff;
-      --surface-muted: #eef3f7;
+      --surface-soft: #eef5f8;
       --text: #172033;
-      --muted: #5d6b7a;
-      --border: #dbe3ea;
+      --muted: #5e6b78;
+      --border: #dce5ec;
       --accent: #1f6f8b;
       --accent-dark: #164e63;
-      --accent-soft: #e6f3f8;
       --green: #2f7d5c;
-      --shadow: 0 18px 50px rgba(23, 32, 51, 0.08);
+      --shadow: 0 18px 48px rgba(23, 32, 51, 0.08);
       --radius: 22px;
       --max: 1120px;
     }
@@ -78,8 +77,8 @@
       position: sticky;
       top: 0;
       z-index: 20;
-      background: rgba(246, 248, 251, 0.9);
-      border-bottom: 1px solid rgba(219, 227, 234, 0.8);
+      background: rgba(247, 249, 251, 0.9);
+      border-bottom: 1px solid rgba(220, 229, 236, 0.85);
       backdrop-filter: blur(14px);
     }
 
@@ -94,10 +93,10 @@
     }
 
     .brand {
-      font-weight: 800;
+      font-weight: 850;
       letter-spacing: -0.03em;
       color: var(--text);
-      font-size: 1.1rem;
+      font-size: 1.08rem;
     }
 
     .nav-links {
@@ -110,7 +109,7 @@
 
     .nav-links a {
       color: var(--muted);
-      font-weight: 650;
+      font-weight: 700;
     }
 
     .nav-links a:hover {
@@ -121,15 +120,15 @@
     main {
       max-width: var(--max);
       margin: 0 auto;
-      padding: 34px 22px 70px;
+      padding: 36px 22px 72px;
     }
 
     .hero {
       display: grid;
-      grid-template-columns: minmax(0, 1.25fr) minmax(280px, 0.75fr);
-      gap: 34px;
+      grid-template-columns: minmax(0, 1.28fr) minmax(290px, 0.72fr);
+      gap: 38px;
       align-items: center;
-      padding: 48px 0 32px;
+      padding: 48px 0 34px;
     }
 
     .eyebrow {
@@ -137,13 +136,13 @@
       align-items: center;
       gap: 8px;
       color: var(--accent-dark);
-      background: var(--accent-soft);
+      background: var(--surface-soft);
       border: 1px solid rgba(31, 111, 139, 0.18);
       border-radius: 999px;
       padding: 8px 12px;
-      font-weight: 700;
+      font-weight: 800;
       font-size: 0.86rem;
-      margin-bottom: 20px;
+      margin-bottom: 22px;
     }
 
     .eyebrow-dot {
@@ -155,22 +154,22 @@
     }
 
     h1 {
-      font-size: clamp(2.45rem, 5vw, 4.8rem);
+      font-size: clamp(2.55rem, 5vw, 4.85rem);
       line-height: 0.96;
       letter-spacing: -0.07em;
       margin: 0 0 22px;
-      max-width: 880px;
+      max-width: 900px;
     }
 
     .hero-subtitle {
-      font-size: clamp(1.08rem, 2vw, 1.35rem);
+      font-size: clamp(1.08rem, 2vw, 1.34rem);
       color: var(--muted);
-      max-width: 760px;
+      max-width: 780px;
       margin: 0 0 24px;
     }
 
     .name-line {
-      font-weight: 800;
+      font-weight: 850;
       color: var(--text);
       margin: 0;
       font-size: 1.15rem;
@@ -179,7 +178,7 @@
     .title-line {
       color: var(--muted);
       margin: 4px 0 0;
-      font-weight: 650;
+      font-weight: 700;
     }
 
     .tag-list {
@@ -196,7 +195,7 @@
       border: 1px solid var(--border);
       border-radius: 999px;
       padding: 8px 12px;
-      font-weight: 700;
+      font-weight: 750;
       color: var(--accent-dark);
       font-size: 0.9rem;
     }
@@ -227,7 +226,7 @@
 
     .quick-facts li {
       color: var(--muted);
-      font-weight: 650;
+      font-weight: 700;
       display: flex;
       gap: 10px;
       align-items: flex-start;
@@ -243,22 +242,12 @@
       flex: 0 0 auto;
     }
 
-    .disclaimer {
-      background: #fffaf0;
-      border: 1px solid #f2d6a2;
-      color: #62430f;
-      border-radius: 16px;
-      padding: 14px 16px;
-      font-size: 0.94rem;
-      margin-top: 22px;
-    }
-
     section {
       padding: 38px 0;
     }
 
     .section-header {
-      max-width: 760px;
+      max-width: 780px;
       margin-bottom: 22px;
     }
 
@@ -315,25 +304,26 @@
       box-shadow: 0 10px 30px rgba(23, 32, 51, 0.045);
     }
 
-    .card p {
+    .card p,
+    .card li {
       color: var(--muted);
     }
 
     .card-link {
       display: inline-flex;
       margin-top: 6px;
-      font-weight: 800;
+      font-weight: 850;
     }
 
     .impact-card {
-      min-height: 190px;
+      min-height: 178px;
     }
 
-    .numberless-icon {
+    .icon {
       width: 42px;
       height: 42px;
       border-radius: 14px;
-      background: var(--accent-soft);
+      background: var(--surface-soft);
       border: 1px solid rgba(31, 111, 139, 0.18);
       margin-bottom: 16px;
       display: flex;
@@ -346,7 +336,6 @@
     .list {
       margin: 0;
       padding-left: 20px;
-      color: var(--muted);
     }
 
     .list li {
@@ -403,6 +392,12 @@
       border-color: rgba(255, 255, 255, 0.35);
     }
 
+    .small-note {
+      color: var(--muted);
+      font-size: 0.92rem;
+      margin-top: 14px;
+    }
+
     .site-footer {
       border-top: 1px solid var(--border);
       padding: 28px 22px;
@@ -420,7 +415,7 @@
     }
 
     .footer-note {
-      max-width: 680px;
+      max-width: 760px;
     }
 
     @media (max-width: 860px) {
@@ -468,10 +463,6 @@
     "url": "https://jaredhouck.com/",
     "image": "https://jaredhouck.com/assets/Houck_2023_Headshot.jpg",
     "jobTitle": "Chief Nursing Informatics Officer",
-    "alumniOf": {
-      "@type": "CollegeOrUniversity",
-      "name": "Augusta University"
-    },
     "knowsAbout": [
       "Clinical Informatics",
       "Nursing Informatics",
@@ -494,10 +485,9 @@
       <a class="brand" href="#top">Jared Houck</a>
       <div class="nav-links">
         <a href="#about">About</a>
-        <a href="#featured">Featured</a>
+        <a href="#writing">Writing</a>
         <a href="#impact">Impact</a>
         <a href="#speaking">Speaking</a>
-        <a href="#thinking">Thinking</a>
         <a href="#contact">Contact</a>
       </div>
     </nav>
@@ -508,13 +498,13 @@
       <div>
         <div class="eyebrow">
           <span class="eyebrow-dot" aria-hidden="true"></span>
-          Based in Charleston, South Carolina
+          Clinical informatics executive
         </div>
 
-        <h1 id="hero-heading">Helping healthcare organizations improve care by solving the right problems before implementing technology.</h1>
+        <h1 id="hero-heading">Helping healthcare organizations solve the right problems before implementing technology.</h1>
 
         <p class="hero-subtitle">
-          I am a clinical informatics executive focused on patient care, clinician experience, and operational performance through technology, governance, workflow redesign, and clinical leadership.
+          I work at the intersection of nursing, clinical operations, technology, governance, and workflow design to improve patient care and clinician experience.
         </p>
 
         <p class="name-line">Jared Houck, MHIIM, RN, NEA-BC, NI-BC</p>
@@ -523,14 +513,10 @@
         <ul class="tag-list" aria-label="Professional focus areas">
           <li>Clinical Informatics</li>
           <li>Nursing Leadership</li>
-          <li>Workflow Redesign</li>
           <li>EHR Optimization</li>
+          <li>Workflow Redesign</li>
           <li>AI Governance</li>
         </ul>
-
-        <div class="disclaimer">
-          This site reflects my personal professional background and perspectives. It does not represent my employer, clients, or affiliated organizations. Any speaking, education, media, consulting, vendor, product, or other external engagement is subject to applicable conflict-of-interest, confidentiality, compliance, and approval requirements.
-        </div>
       </div>
 
       <aside class="hero-card" aria-label="Professional summary">
@@ -543,7 +529,7 @@
         <ul class="quick-facts">
           <li>Chief Nursing Informatics Officer</li>
           <li>Becker's Healthcare contributor</li>
-          <li>Clinical informatics speaker and professional contributor</li>
+          <li>Clinical informatics speaker</li>
           <li>Board Certified Nurse Executive Advanced</li>
           <li>Board Certified Informatics Nurse</li>
           <li>Doctor of Nursing Practice candidate, expected December 2026</li>
@@ -554,38 +540,35 @@
     <section id="about" aria-labelledby="about-heading">
       <div class="section-header">
         <div class="section-kicker">About</div>
-        <h2 id="about-heading">Who is Jared Houck?</h2>
+        <h2 id="about-heading">Nursing leader. Informatics executive. Digital transformation partner.</h2>
+        <p class="lead">
+          I am a registered nurse and dual board-certified nurse executive and informatics leader with more than 20 years of experience advancing health system strategy, EHR optimization, AI governance, clinical workflow redesign, and clinician experience.
+        </p>
       </div>
 
       <div class="grid grid-2">
         <div class="card">
+          <h3>What I focus on</h3>
           <p>
-            Jared Houck is a Charleston-based Chief Nursing Informatics Officer, registered nurse, and dual board-certified nurse executive and informatics leader with more than 20 years of experience advancing health system strategy, digital transformation, EHR optimization, AI governance, and clinician experience.
-          </p>
-          <p>
-            My work focuses on improving patient care, reducing clinician burden, and delivering measurable operational value through thoughtful use of healthcare technology.
-          </p>
-          <p>
-            I bring a system-level perspective to initiatives spanning Epic optimization, clinical decision support redesign, mobile technology adoption, regulatory alignment, governance, and AI innovation.
+            My work centers on improving patient care, reducing clinician burden, and helping healthcare teams use technology with discipline, clarity, and measurable purpose.
           </p>
         </div>
 
         <div class="card">
-          <h3>Core positioning</h3>
-          <p class="lead">Nursing leader. Informatics executive. Digital transformation partner.</p>
+          <h3>How I think about technology</h3>
           <p>
-            I work at the intersection of clinical operations, technology, governance, and frontline workflow. My professional lens is simple. Technology should make clinical work safer, clearer, and more human.
+            Good informatics work starts before build. It begins with understanding the clinical problem, engaging the people closest to the work, and defining what success should look like.
           </p>
         </div>
       </div>
     </section>
 
-    <section id="featured" aria-labelledby="featured-heading">
+    <section id="writing" aria-labelledby="writing-heading">
       <div class="section-header">
-        <div class="section-kicker">Featured</div>
-        <h2 id="featured-heading">Featured in Becker's Healthcare</h2>
+        <div class="section-kicker">Writing and commentary</div>
+        <h2 id="writing-heading">Featured in Becker's Healthcare</h2>
         <p class="lead">
-          I have contributed perspectives to Becker's Healthcare on clinical informatics, nursing technology adoption, AI governance, EHR reliability, workflow redesign, ambient technology, digital transformation, and the future of nursing leadership.
+          I contribute perspectives on clinical informatics, nursing technology adoption, AI governance, EHR reliability, workflow redesign, ambient technology, digital transformation, and the future of nursing leadership.
         </p>
       </div>
 
@@ -614,54 +597,47 @@
           <a class="card-link" href="https://www.beckershospitalreview.com/healthcare-information-technology/cnios-share-top-barriers-to-nursing-adoption-of-new-technology/" target="_blank" rel="noopener noreferrer">Read in Becker's</a>
         </article>
       </div>
-
-      <div class="card" style="margin-top: 18px;">
-        <h3>Additional Becker's Healthcare contributions</h3>
-        <p>
-          Topics include AI adoption, ambient technology, EHR reliability, digital crisis planning, clinical informatics strategy, nurse retention, healthcare transformation, and healthcare innovation.
-        </p>
-      </div>
     </section>
 
     <section id="impact" aria-labelledby="impact-heading">
       <div class="section-header">
         <div class="section-kicker">Impact</div>
-        <h2 id="impact-heading">Selected impact</h2>
+        <h2 id="impact-heading">Selected areas of work</h2>
         <p class="lead">
-          Public-facing examples of clinical informatics work that shape my perspective on technology, governance, adoption, and measurable value.
+          A practical view of the informatics work that has shaped my perspective on adoption, governance, value, and clinical change.
         </p>
       </div>
 
       <div class="grid grid-2">
         <article class="card impact-card">
-          <div class="numberless-icon" aria-hidden="true">01</div>
-          <h3>Reduced alert fatigue</h3>
+          <div class="icon" aria-hidden="true">01</div>
+          <h3>Reducing alert fatigue</h3>
           <p>
-            Supported review and retirement of a high-volume clinical alert after outcome review showed limited value and meaningful workflow burden.
+            Led and supported clinical decision support review focused on reducing low-value interruptions and improving the signal clinicians receive in the EHR.
           </p>
         </article>
 
         <article class="card impact-card">
-          <div class="numberless-icon" aria-hidden="true">02</div>
-          <h3>Improved technology value</h3>
+          <div class="icon" aria-hidden="true">02</div>
+          <h3>Improving technology value</h3>
           <p>
-            Supported Epic optimization initiatives that reduced avoidable reliance on third-party applications and improved technology portfolio value.
+            Advanced EHR optimization efforts that improved technology portfolio value, reduced avoidable duplication, and supported operational sustainability.
           </p>
         </article>
 
         <article class="card impact-card">
-          <div class="numberless-icon" aria-hidden="true">03</div>
-          <h3>Transformed mobile nursing workflows</h3>
+          <div class="icon" aria-hidden="true">03</div>
+          <h3>Modernizing nursing workflows</h3>
           <p>
-            Supported clinical smartphone and mobile workflow adoption to improve mobility, communication, documentation timeliness, and clinician workflow.
+            Supported mobile and bedside workflow adoption to improve communication, documentation timeliness, medication workflows, and clinician experience.
           </p>
         </article>
 
         <article class="card impact-card">
-          <div class="numberless-icon" aria-hidden="true">04</div>
-          <h3>Built governance for change</h3>
+          <div class="icon" aria-hidden="true">04</div>
+          <h3>Building governance for change</h3>
           <p>
-            Established and led nursing informatics governance structures that brought frontline clinical voices into technology decisions.
+            Created and led nursing informatics governance structures that bring frontline clinical insight into technology decisions.
           </p>
         </article>
       </div>
@@ -670,9 +646,9 @@
     <section id="speaking" aria-labelledby="speaking-heading">
       <div class="section-header">
         <div class="section-kicker">Speaking</div>
-        <h2 id="speaking-heading">Speaking and professional contributions</h2>
+        <h2 id="speaking-heading">Speaking and professional contribution</h2>
         <p class="lead">
-          I contribute to regional and industry conversations on clinical informatics, health information management, AI governance, workflow redesign, and healthcare technology adoption.
+          I contribute to professional conversations on clinical informatics, health information management, AI governance, workflow redesign, and healthcare technology adoption.
         </p>
       </div>
 
@@ -686,49 +662,14 @@
         </div>
 
         <div class="card">
-          <h3>Professional contribution areas</h3>
+          <h3>Common topics</h3>
           <ul class="list">
-            <li>Becker's Healthcare contributor and quoted CNIO voice</li>
-            <li>Clinical informatics, AI governance, workflow redesign, and clinician experience</li>
-            <li>Professional education and industry discussion, subject to appropriate review and approval requirements</li>
+            <li>Clinical informatics strategy</li>
+            <li>Nursing workflow and clinician experience</li>
+            <li>EHR optimization and clinical decision support</li>
+            <li>AI governance and healthcare technology adoption</li>
           </ul>
         </div>
-      </div>
-    </section>
-
-    <section id="thinking" aria-labelledby="thinking-heading">
-      <div class="section-header">
-        <div class="section-kicker">Thinking</div>
-        <h2 id="thinking-heading">Current thinking</h2>
-        <p class="lead">
-          These are themes that consistently appear in my professional writing, public commentary, and leadership work.
-        </p>
-      </div>
-
-      <div class="grid grid-3">
-        <article class="card">
-          <h3>Define the problem before solving it</h3>
-          <p>
-            Clinical informatics creates a necessary pause between urgency and action so teams can define, measure, analyze, and solve the right problem.
-          </p>
-          <a class="card-link" href="https://www.linkedin.com/posts/jaredhouck_clinicians-are-trained-to-respond-quickly-activity-7466464832351932416-Y1d4" target="_blank" rel="noopener noreferrer">Read on LinkedIn</a>
-        </article>
-
-        <article class="card">
-          <h3>Nurses need upstream influence in technology design</h3>
-          <p>
-            Nurses need to be involved before products are designed, business cases are built, and purchasing decisions are made.
-          </p>
-          <a class="card-link" href="https://www.linkedin.com/posts/jaredhouck_its-remarkable-to-me-that-in-2026-i-consistently-activity-7460446514700603392-fh4c" target="_blank" rel="noopener noreferrer">Read on LinkedIn</a>
-        </article>
-
-        <article class="card">
-          <h3>AI should not be layered onto broken workflows</h3>
-          <p>
-            AI will not succeed if it is layered onto broken workflows, disconnected communication, unnecessary documentation, and fragmented patient experiences.
-          </p>
-          <a class="card-link" href="https://www.linkedin.com/posts/jaredhouck_you-cant-put-ai-on-top-of-a-fax-machine-activity-7363620788572147714-QZsb" target="_blank" rel="noopener noreferrer">Read on LinkedIn</a>
-        </article>
       </div>
     </section>
 
@@ -736,7 +677,7 @@
       <div class="callout">
         <h2 id="philosophy-heading">Professional philosophy</h2>
         <p>
-          Technology should support clinical work, not create more of it. The most successful healthcare technology initiatives begin by understanding the clinical problem, engaging frontline users, and measuring outcomes that matter to patients, clinicians, and organizations.
+          Technology should support clinical work, not create more of it. The strongest healthcare technology initiatives begin with the clinical problem, include the people closest to the work, and measure outcomes that matter to patients, clinicians, and organizations.
         </p>
       </div>
     </section>
@@ -746,14 +687,14 @@
         <div class="section-kicker">Connect</div>
         <h2 id="contact-heading">Connect</h2>
         <p class="lead">
-          I share writing and professional updates on LinkedIn. Requests related to speaking, education, media, vendor, product, consulting, or other outside professional engagement are reviewed under applicable conflict-of-interest, confidentiality, compliance, and approval requirements before any commitment is made.
+          LinkedIn is the best place to follow my writing, public commentary, and professional updates.
         </p>
       </div>
 
       <div class="callout">
         <h2>Professional contact</h2>
         <p>
-          For general professional connection, LinkedIn is the best place to follow my writing and public commentary. I do not discuss confidential employer, client, vendor, product, procurement, or operational matters through this site.
+          For professional connection, speaking requests, education requests, or public commentary inquiries, please reach out through LinkedIn or email.
         </p>
 
         <div class="contact-row">
@@ -761,6 +702,10 @@
           <a class="button button-secondary" href="mailto:jaredhouck@gmail.com">Email</a>
         </div>
       </div>
+
+      <p class="small-note">
+        External engagements are reviewed before commitment. I do not discuss confidential employer, client, vendor, product, procurement, or operational matters through this site.
+      </p>
     </section>
   </main>
 
